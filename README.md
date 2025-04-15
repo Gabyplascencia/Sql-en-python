@@ -1,62 +1,27 @@
-# Sql-en-python
-Se pondrá a prueba llamar desde un formato jupyter a una extracción y consulta en una base de datos.
+# Books data and its analysis
+We've been given access to a database of book publications dating back to the 2000s, and we're required to access, download, and analyze the database to assist emerging digital book businesses.
 
-# Proyecto SQL
-El coronavirus tomó al mundo entero por sorpresa, cambiando la rutina diaria de todos y todas. Los habitantes de las ciudades ya no pasaban su tiempo libre fuera, yendo a cafés y centros comerciales; sino que más gente se quedaba en casa, leyendo libros. Eso atrajo la atención de las startups (empresas emergentes) que se apresuraron a desarrollar nuevas aplicaciones para los amantes de los libros.
+## 🏁Objetive
+The test will include extracting and querying a database from a Jupyter format, as well as analyzing information requested directly by clients.
 
-Te han dado una base de datos de uno de los servicios que compiten en este mercado. Contiene datos sobre libros, editoriales, autores y calificaciones de clientes y reseñas de libros. Esta información se utilizará para generar una propuesta de valor para un nuevo producto.
+## 🖥Technologies used
+- **Python**: Pandas, sqlalchemy
+- **Jupyter Notebook**: Interactive environment for analysis.
+- **CSV Dataset**: Contains user behavior data.
 
-# Descripción de los datos
-books:
+## 🔑Key Steps
+1. **Database entry and download**:
+   - Access to the database is requested and only the necessary files are downloaded.
+2. **Data Description**:
+   - Assessed the quality of the dataset and summarized its structure.
+3. **Data Preprocessing**:
+   - Handled missing values, corrected formatting issues, and removed duplicates.
+4. **Data Analyst**:
+   - The information required by the client is searched within the tables.
+  
 
-Contiene datos sobre libros:
-
-book_id — identificación del libro
-author_id — identificación del autor o autora
-title — título
-num_pages — número de páginas
-publication_date — fecha de la publicación
-publisher_id — identificación de la editorial
-authors:
-
-Contiene datos sobre autores:
-
-author_id — identificación del autor o autora
-author — el autor o la autora
-publishers:
-
-Contiene datos sobre editoriales:
-
-publisher_id — identificación de la editorial
-publisher — la editorial
-ratings:
-
-Contiene datos sobre las calificaciones de usuarios:
-
-rating_id — identificación de la calificación
-book_id — identificación del libro
-username — el nombre del usuario que revisó el libro
-rating — calificación
-reviews:
-
-Contiene datos sobre las reseñas de los y las clientes:
-
-review_id — identificación de la reseña
-book_id — identificación del libro
-username — el nombre del usuario que revisó el libro
-text — el texto de la reseña
-
-# Ejercicio
-Encuentra el número de libros publicados después del 1 de enero de 2000.
-Encuentra el número de reseñas de usuarios y la calificación promedio para cada libro.
-Identifica la editorial que ha publicado el mayor número de libros con más de 50 páginas (esto te ayudará a excluir folletos y publicaciones similares de tu análisis).
-Identifica al autor que tiene la más alta calificación promedio del libro: mira solo los libros con al menos 50 calificaciones.
-Encuentra el número promedio de reseñas de texto entre los usuarios que calificaron más de 50 libros.
-
-# Instrucciones para completar la tarea
-
-Describe los objetivos del estudio.
-Estudia las tablas (imprime las primeras filas).
-Realiza una consulta SQL para cada una de las tareas.
-Genera los resultados de cada consulta en el Notebook.
-Describe tus conclusiones para cada una de las tareas.
+## 🥇🏆Results
+The analysis confirms that:
+- Since the beginning of the 2000s, we have a record of 812 books published, registered in this database.
+- Penguin Books is, to our knowledge, the publisher with the largest number of books published, with a record of 42 titles.
+- American writer Diana Gabaldon is considered the highest-rated writer by users with her posts averaging 4.3 million views.
